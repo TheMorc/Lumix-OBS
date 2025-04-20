@@ -8,7 +8,7 @@
 	<div id="main" style="height:95%;">
 		<div id="connect">
 			<input type="text" id="fIP" value="192.168.1.114"> 
-			<input type="button" name="init" value="Connect" onclick="connect()">
+			<input type="button" name="init" value="Connect" onclick="keepAlive();connect()">
 		</div>
 		<br>
 		<div id="rec_controls">
@@ -312,7 +312,6 @@
 				lumix_open('http://' + window.cameraIp + '/cam.cgi?mode=camcmd&value=capture_cancel');
 			}, 2000 );
 		}
-		keepAlive();
 		
 		async function connect()
 		{
