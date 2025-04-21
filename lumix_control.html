@@ -23,15 +23,6 @@
 			<table>
 				<tr>
 				<th>
-					<select id="wb" onchange="lumix_open('http://' + window.cameraIp + '/cam.cgi?mode=setsetting&type=whitebalance&value=' + document.getElementById('wb').value)">
-						<option value="auto">Auto</option>
-						<option value="white_set1">Cust 1</option>
-						<option value="white_set2">Cust 2</option>
-						<option value="white_set3">Cust 3</option>
-						<option value="white_set4">Cust 4</option>
-					</select>
-				</th>
-				<th>
 				<div id="iso">
 				  <button id="iso_minus" onclick="iso_dec()">-</button>
 				  <span style="width:45px;display: inline-block;" id="iso_label">ISO</span>
@@ -58,6 +49,15 @@
 				  <span style="width:45px;display: inline-block;" id="expo_label">EXPO</span>
 				  <button id="expo_plus" onclick="expo_inc()">+</button>
 				</div>
+				</th>
+				<th>
+					<select id="wb" onchange="lumix_open('http://' + window.cameraIp + '/cam.cgi?mode=setsetting&type=whitebalance&value=' + document.getElementById('wb').value)">
+						<option value="auto">Auto</option>
+						<option value="white_set1">Cust 1</option>
+						<option value="white_set2">Cust 2</option>
+						<option value="white_set3">Cust 3</option>
+						<option value="white_set4">Cust 4</option>
+					</select>
 				</th>
 				</tr>
 			</table>
